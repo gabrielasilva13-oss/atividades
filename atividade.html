@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista com Array</title>
+</head>
+<body>
+
+  <h2>Lista de Produtos</h2>
+  <ul id="lista"></ul>
+
+  <script>
+    const produtos = [
+      "Mouse Gamer",
+      "Teclado Mecânico",
+      "Monitor",
+      "Headset",
+      "Notebook"
+    ];
+
+    const lista = document.getElementById("lista");
+
+    produtos.forEach(produto => {
+      const item = document.createElement("li");
+      item.textContent = produto;
+      lista.appendChild(item);
+    });
+  </script>
+
+</body>
+</html>

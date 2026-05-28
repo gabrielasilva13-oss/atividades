@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduce no Array</title>
+</head>
+<body>
+
+  <h2>Lista de Produtos</h2>
+  <ul id="lista"></ul>
+
+  <script>
+    const numeros = [10, 20, 30, 40, 50];
+
+  const soma = numeros.reduce((total, numero) => {
+    return total + numero;
+  }, 0);
+
+  console.log(soma);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter no Array</title>
+</head>
+<body>
+
+  <h2>Lista de Produtos</h2>
+  <ul id="lista"></ul>
+
+  <script>
+    const produtos = [
+    "Mouse Gamer",
+    "Teclado Mecânico",
+    "Monitor",
+    "Headset",
+    "Notebook"
+  ];
+
+  const resultado = produtos.filter(produto => 
+    produto.includes("Mouse")
+  );
+
+  console.log(resultado);
+  </script>
+
+</body>
+</html>

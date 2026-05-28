@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Push no Array</title>
+</head>
+<body>
+
+  <h2>Lista de Produtos</h2>
+  <ul id="lista"></ul>
+
+  <script>
+    const produtos = [];
+
+    produtos.push("Mouse Gamer");
+    produtos.push("Teclado Mecânico");
+    produtos.push("Monitor");
+    produtos.push("Headset");
+    produtos.push("Notebook");
+    produtos.push("Cadeira Gamer");
+    produtos.push("Webcam");
+    produtos.push("Microfone");
+    produtos.push("SSD 1TB");
+    produtos.push("Controle Bluetooth");
+
+    const lista = document.getElementById("lista");
+
+    produtos.forEach(produto => {
+      const item = document.createElement("li");
+      item.textContent = produto;
+      lista.appendChild(item);
+    });
+  </script>
+
+</body>
+</html>
